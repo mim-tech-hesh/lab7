@@ -1,5 +1,6 @@
-
 import 'package:flutter/material.dart';
+import 'package:icons_plus/icons_plus.dart';
+import 'package:lab7/utils/costant/colors.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -13,10 +14,17 @@ class Home extends StatelessWidget {
           style: TextStyle(
             fontFamily: "DMSans",
             fontWeight: FontWeight.w700,
+            color:FColors.cceanBlue,
           ),
-          ),
-        centerTitle: true,
+        ),
+        actions:  [
+          Icon(Iconsax.notification_bring_outline),
+          Icon(HeroIcons.shopping_cart),
+        ],
+        centerTitle:true,
       ),
     );
   }
 }
+
+       
